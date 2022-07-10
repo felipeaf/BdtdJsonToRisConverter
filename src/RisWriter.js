@@ -20,7 +20,12 @@ export const enumTypes  = Object.freeze({
 
 export const languagesMap = Object.freeze({
     por: 'Portuguese',
-    eng: 'English'
+    eng: 'English',
+    spa: 'Spanish',
+    esp: 'Spanish',
+    spn: 'Spanish',
+    fra: 'French',
+    deu: 'German',
 });
 
 

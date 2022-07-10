@@ -6,12 +6,13 @@ export default class BdtdConverter {
         this.risWriter=risWriter;
     }
 
-    parse(json) {
+    parse(json, endCb) {
         JSON.parse(json).records.forEach(r => this.parseEntry(r));
+        if(endCb) endCb();
     }
 
     getLanguage(str) {
-        let result =  languagesMap[str];
+        let result =  languagesMap[str.toLowerCase()];
         return nvl(result,str);
     }
 

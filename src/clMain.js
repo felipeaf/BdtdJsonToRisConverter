@@ -28,7 +28,6 @@ import convertBdtdToRis from './ConverterFacade.js';
 
 
 function convert(inputFile, outputFile) {
-    console.log(inputFile,outputFile);
     if(!inputFile) {
         console.error("use: node index.js inputFile outputFile");
         return;
