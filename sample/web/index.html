@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            BDTD To Ris Converter
+        </title>
+        <script src="./index.js" type="module">
+
+        </script>
+    </head>
+    <body>
+        <h1>BDTD To Ris Converter</h1>
+        <p>Conversor do formato JSON que pode ser exportado dos resultados de busca da <a href="https://bdtd.ibict.br">Biblioteca Digital Brasileira de Teses e Dissertações (BDTD)</a> para o <a href="https://en.wikipedia.org/wiki/RIS_(file_format)">formato RIS</a>, que pode ser importado em outros softwares (por exemplo Zotero).</p>
+
+        <p>
+            Esta ferramenta é oferecido de graça, sem garantias e de acordo com a <a href="https://www.gnu.org/licenses/agpl-3.0.en.html">licença Affro GPLv3</a>.
+        </p>
+
+        <form name="formConverter" id="formConverter">
+            <div>
+                <input type="file" value="Abrir JSON" id="openBDTD" name="openBDTD">
+                <textarea id="BDTDContent" name="BDTDContent"></textarea>
+            </div>
+            <div>
+                <input type="button" value="Download RIS" id="downloadRIS" name="downloadRIS">
+                <textarea id="RisContent" name="RisContent" readonly></textarea>
+            </div>
+        </form>
+        
+    </body>
+</html>
